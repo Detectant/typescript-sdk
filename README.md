@@ -9,7 +9,7 @@ Scan files for malware from Node.js and TypeScript.
 ## Install
 
 ```bash
-npm install @detectant/sdk
+npm install @detectant-api/sdk
 ```
 
 Set your API key in the environment:
@@ -21,7 +21,7 @@ export DETECTANT_API_KEY="your-api-key"
 ## Create a client
 
 ```ts
-import { Detectant } from "@detectant/sdk";
+import { Detectant } from "@detectant-api/sdk";
 
 const detectant = new Detectant({
   apiKey: process.env.DETECTANT_API_KEY,
