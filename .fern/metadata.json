@@ -1,0 +1,15 @@
+{
+    "cliVersion": "5.99.0",
+    "generatorName": "fernapi/fern-typescript-sdk",
+    "generatorVersion": "3.87.2",
+    "generatorConfig": {
+        "naming": {
+            "client": "Detectant"
+        },
+        "inlineFileProperties": false
+    },
+    "originGitCommit": "28e2bb671d18e80814278a061cf62a42cf6da567",
+    "originGitCommitIsDirty": true,
+    "invokedBy": "manual",
+    "sdkVersion": "0.0.2"
+}
