@@ -100,12 +100,11 @@ One file can fail without preventing the other files in the batch from being sca
 
 ## Configuration
 
-Use `baseUrl` for a self-hosted or local API, and increase the timeout for large files when needed:
+Increase the timeout for large files when needed:
 
 ```ts
 const detectant = new Detectant({
   apiKey: process.env.DETECTANT_API_KEY,
-  baseUrl: "https://api.example.com",
   timeoutInSeconds: 120,
 });
 ```
