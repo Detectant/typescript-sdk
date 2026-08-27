@@ -1,8 +1,10 @@
 <p align="center">
-  <img src="../../app/dashboard/public/images/detectant-github-banner.png" alt="Detectant" width="100%">
+  <img src="https://www.detectant.com/images/detectant-github-banner.png" alt="Detectant" width="100%">
 </p>
 
 # Detectant TypeScript SDK
+
+[Detectant is a malware scanning API with support for TypeScript](https://www.detectant.com)
 
 Scan files for malware from Node.js and TypeScript.
 
@@ -100,12 +102,11 @@ One file can fail without preventing the other files in the batch from being sca
 
 ## Configuration
 
-Use `baseUrl` for a self-hosted or local API, and increase the timeout for large files when needed:
+Increase the timeout for large files when needed:
 
 ```ts
 const detectant = new Detectant({
   apiKey: process.env.DETECTANT_API_KEY,
-  baseUrl: "https://api.example.com",
   timeoutInSeconds: 120,
 });
 ```

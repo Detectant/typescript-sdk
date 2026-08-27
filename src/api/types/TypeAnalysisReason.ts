@@ -10,6 +10,8 @@ export namespace TypeAnalysisReason {
     export const Code = {
         MalformedFile: "malformed_file",
         EncryptedArchive: "encrypted_archive",
+        UnsupportedArchive: "unsupported_archive",
+        ContentExpansionLimitExceeded: "content_expansion_limit_exceeded",
         FileTypeMismatch: "file_type_mismatch",
     } as const;
     export type Code = (typeof Code)[keyof typeof Code];

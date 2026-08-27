@@ -13,11 +13,13 @@ export interface Scan {
     sha256: string;
     size_bytes: number;
     duration_ms: number;
+    timings: DetectantApi.ScanTimings;
     /** Failure information, or `null` when the scan completed. */
     failure: DetectantApi.ScanFailure | null;
     /** Detection names reported for the file. Empty when no threats were detected. */
     detections: string[];
     type_analysis: DetectantApi.TypeAnalysis;
+    source: DetectantApi.ScanSource;
 }
 
 export namespace Scan {

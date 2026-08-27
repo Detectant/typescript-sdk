@@ -20,6 +20,7 @@ describe("ScansClient", () => {
                     sha256: "sha256",
                     size_bytes: 1000000,
                     duration_ms: 1.1,
+                    timings: { file_type_ms: 1.1, malware_scan_ms: 1.1 },
                     failure: { code: "SCANNER_UNAVAILABLE", message: "message" },
                     detections: ["detections"],
                     type_analysis: {
@@ -30,6 +31,7 @@ describe("ScansClient", () => {
                         confidence: "high",
                         reason: null,
                     },
+                    source: { type: "api", integration_id: null, integration_name: null },
                 },
             ],
             next_cursor: "next_cursor",
@@ -106,6 +108,7 @@ describe("ScansClient", () => {
             sha256: "sha256",
             size_bytes: 1000000,
             duration_ms: 1.1,
+            timings: { file_type_ms: 1.1, malware_scan_ms: 1.1 },
             failure: { code: "SCANNER_UNAVAILABLE", message: "message" },
             detections: ["detections"],
             type_analysis: {
@@ -116,6 +119,7 @@ describe("ScansClient", () => {
                 confidence: "high",
                 reason: { code: "malformed_file", claimed: "claimed", detected: "detected" },
             },
+            source: { type: "api", integration_id: "integration_id", integration_name: "integration_name" },
         };
 
         server
