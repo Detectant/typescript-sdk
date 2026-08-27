@@ -297,4 +297,4 @@ patches:
         }
       src/version.ts: |
         export const SDK_VERSION = "0.0.4";
-    status: unresolved
+    status: resolving
