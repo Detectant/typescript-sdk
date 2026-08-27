@@ -8,9 +8,9 @@
         },
         "inlineFileProperties": false
     },
-    "originGitCommit": "59302a420972e85f2be7ceb0d76d944f9ae8d848",
+    "originGitCommit": "87dec6fc589390b1db492ae079b90eb38cd153a9",
     "originGitCommitIsDirty": false,
     "invokedBy": "manual",
-    "requestedVersion": "0.0.5",
-    "sdkVersion": "0.0.5"
+    "requestedVersion": "0.0.6",
+    "sdkVersion": "0.0.6"
 }
