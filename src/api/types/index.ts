@@ -6,6 +6,8 @@ export * from "./ScanBatchResponse.js";
 export * from "./ScanBatchResult.js";
 export * from "./ScanFailure.js";
 export * from "./ScanList.js";
+export * from "./ScanSource.js";
+export * from "./ScanTimings.js";
 export * from "./TypeAnalysis.js";
 export * from "./TypeAnalysisReason.js";
 export * from "./TypeDeclaration.js";
