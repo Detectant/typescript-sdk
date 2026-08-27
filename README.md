@@ -1,3 +1,5 @@
+# [Detectant - Malware Scanning API for TypeScript](https://www.detectant.com)
+
 <p align="center">
   <img src="https://www.detectant.com/images/detectant-github-banner.png" alt="Detectant" width="100%">
 </p>
