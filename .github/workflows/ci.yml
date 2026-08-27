@@ -72,13 +72,19 @@ jobs:
 
       - name: Publish to npm
         run: |
+          PKG_NAME=$(node -p "require('./package.json').name")
+          PKG_VERSION=$(node -p "require('./package.json').version")
+
+          if npm view "${PKG_NAME}@${PKG_VERSION}" version > /dev/null 2>&1; then
+            echo "${PKG_NAME}@${PKG_VERSION} is already published; skipping"
+            exit 0
+          fi
+
           if [[ ${GITHUB_REF} == *alpha* ]]; then
             npm publish --access public --tag alpha
           elif [[ ${GITHUB_REF} == *beta* ]]; then
             npm publish --access public --tag beta
           else
-            PKG_NAME=$(node -p "require('./package.json').name")
-            PKG_VERSION=$(node -p "require('./package.json').version")
             CURRENT_LATEST=$(npm view "${PKG_NAME}" dist-tags.latest 2>/dev/null || echo "0.0.0")
             if npx -y semver@7.8.1 "${PKG_VERSION}" -r "<${CURRENT_LATEST}" > /dev/null 2>&1; then
               echo "Publishing ${PKG_VERSION} with --tag backport (current latest is ${CURRENT_LATEST})"
