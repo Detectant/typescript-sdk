@@ -24,7 +24,13 @@ generations:
     cli_version: unknown
     generator_versions:
       fernapi/fern-typescript-sdk: 3.87.2
-current_generation: fc8f5e850ee0483d58450c25d399907964c73ba8
+  - commit_sha: 483885ae04c31148518b7dfb0702c463251a2685
+    tree_hash: 0804b62715abe4ba1a75ebeb97cfb70e81c9f273
+    timestamp: 2026-08-27T14:09:08.443Z
+    cli_version: unknown
+    generator_versions:
+      fernapi/fern-typescript-sdk: 3.87.2
+current_generation: 483885ae04c31148518b7dfb0702c463251a2685
 patches:
   - id: patch-031c35cc
     content_hash: sha256:cdca952aea948efd04971f0196290ba11525d0423ee07725c6228abd217b7005
@@ -297,4 +303,4 @@ patches:
         }
       src/version.ts: |
         export const SDK_VERSION = "0.0.4";
-    status: resolving
+    status: unresolved
